@@ -11,5 +11,10 @@
 size_t  ft_strlen(const char *s);
 char    *ft_strjoin (char const *s1, char const *s2);
 char	*ft_strchr(const char *s, int c);
-char    ft_substr(char *s, unsigned int start, size_t len);
+char    *ft_substr(char *s, unsigned int start, size_t len);
+char    *read_file(int fd, char *saved);
+char    *get_remaining(char *saved);
+char    *get_line(char *saved);
+char  *get_next_line(int fd);
+char    *my_free(char *saved, char *buffer);
 #endif
